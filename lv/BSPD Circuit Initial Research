@@ -1,0 +1,43 @@
+What is an op-amp based comparator?
+
+.   -Unless specified, the information below is from *(lectronicsTutorials)(https://www.electronics-tutorials.ws/opamp/op-amp-comparator.html)*
+
+.   -An op-amp is an electronic component that has an inverting input \[-]nd a non inverting input \[+]
+
+.   -An op-amp based comparator compares one analog voltage level with another analog voltage level
+
+.   -Produces a voltage output based on the comparison of the two levels
+
+.   -Basically, it finds which output is the largest magnitude
+
+.       -Produces a negative \[low] value if the input level is less than the reference level
+
+.       -Produces a positive \[high] value if the input level is greater than the reference level
+
+How to use an op-amp based comparator:
+
+. -Non-inverting op-amp circuit:
+
+.   -When input voltage is greater than the reference voltage, then it sends out a high output
+
+.   -When input voltage is lower than the reference voltage, then it sends out a low output
+
+. -Inverting op-amp circuit:
+
+.    -Does the opposite thing as the non-inverting op-amp circuit
+
+. -Window op-amp circuit:
+
+.    -Both of the previous circuits combined into one
+
+.  -Has two reference voltages instead of one
+
+.  -Input voltage rests outside two reference voltages
+
+.  -If inside the two ref voltages, then high output. If outside the two reference voltages, then low output.
+
+.-Voltage level detector:
+
+.  -By connecting multiple op amps in a circuit, you can make a voltage level detector
+
+.  -All share an input
