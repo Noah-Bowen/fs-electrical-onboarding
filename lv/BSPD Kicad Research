@@ -1,0 +1,27 @@
+*These notes were made while I was creating the schematic for the BSPD circuit
+What is a BSPD?
+  -A BSPD is a safety component that monitors the breaks
+    -Prevents the driver from breaking and accelerating at the same time
+  -If a break pressure value and a acceleration from the pedal are sent into the BSPD at the same time, the BSPD should trigger
+  -Must use an op-amp to compare and scale voltages
+    -Maybe LMH6611?
+      -Can take min 2.7V and max 11V
+      -In range of low voltage
+      -Pin 5 allows for a shutdown of the op-amp for conserving power
+        -Could maybe be useful?
+      -(https://www.ti.com/product/LMH6611)
+      -(https://www.ti.com/lit/ds/symlink/lmh6611.pdf)
+    -Maybe op-amp dual?
+      -Seems more familiar and user friendly
+      -Easier to visualise pins
+    -Maybe MCP6001-OT?
+      -Similar looking to the LMH6611, but no shutdown pin
+        -Possibly simpler to implement
+  -Current Sensor:
+    -Output voltage = 2.5 +/- 0.025 [V]
+  -Brake Pressure Sensor:
+    -Output voltage = ???
+Questions:
+  -Does FS use more than one power source?
+  -What is the voltage of the BPS and the current sensor?
+  -How does scaling voltage work and how can it be used in this circuit?
